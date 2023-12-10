@@ -19,8 +19,9 @@ Using OpenCV's matchTemplate to Recognize Taiwan Dollar_v0 Version
 The effects of version v1: https://youtu.be/F-7UIlNt1y4  
 Changing the v0 version of the photo results in an inability to recognize, even if it is changed to the same size as the original image, it cannot be recognized. Changing different matching methods is also unrecognizable. The video has detailed test results. The response from Bing Chat is as follows: 
 
-The effects of version v2: 
-Based on v0 and v1, both use matchTemplate to compare photos, but they cannot get the correct number of coins when using different cameras or formats. v2 changes to use the area method to compare.
+# TW's coin findContours  
+The effects of version v0: 
+Based on v0 and v1, both use matchTemplate to compare photos, but they cannot get the correct number of coins when using different cameras or formats. v0 changes to use the area method to compare.
 
 --------------------------------
 When using OpenCV's matchTemplate for template matching, you may encounter some issues that prevent correct recognition of the coins in the image when changing the image. Here are some possible reasons:
