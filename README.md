@@ -23,6 +23,11 @@ Changing the v0 version of the photo results in an inability to recognize, even 
 The effects of version v0: 
 Based on v0 and v1, both use matchTemplate to compare photos, but they cannot get the correct number of coins when using different cameras or formats. v0 changes to use the area method to compare.
 
+The effects of version v1:  
+This version was tested using the TibaMe OpenCV course, including "resize", "cvtColor", "threshold", "findContours", "contourArea", "moments", "boundingRect", "rectangle", "circle" , application of "putText" directive.  
+However, when changing photos in different formats, recognition errors will still occur.
+
+
 --------------------------------
 When using OpenCV's matchTemplate for template matching, you may encounter some issues that prevent correct recognition of the coins in the image when changing the image. Here are some possible reasons:
 
