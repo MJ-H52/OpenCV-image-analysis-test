@@ -20,10 +20,10 @@ The effects of version v1: https://youtu.be/F-7UIlNt1y4
 Changing the v0 version of the photo results in an inability to recognize, even if it is changed to the same size as the original image, it cannot be recognized. Changing different matching methods is also unrecognizable. The video has detailed test results. The response from Bing Chat is as follows: 
 
 # TW's coin findContours  
-The effects of version v0: 
-Based on v0 and v1, both use matchTemplate to compare photos, but they cannot get the correct number of coins when using different cameras or formats. v0 changes to use the area method to compare.
+The effects of version v0: https://youtu.be/cwBTObchT8k  
+Based on v0 and v1, both use matchTemplate to compare photos, but they cannot get the correct number of coins when using different cameras or formats. v0 uses findContours to find the coin outline, but it does not identify different coins. There are still areas that can be modified.
 
-The effects of version v1:  
+The effects of version v1:  https://youtu.be/7PoI37yf9rg  
 This version was tested using the TibaMe OpenCV course, including "resize", "cvtColor", "threshold", "findContours", "contourArea", "moments", "boundingRect", "rectangle", "circle" , application of "putText" directive.  
 However, when changing photos in different formats, recognition errors will still occur.
 
